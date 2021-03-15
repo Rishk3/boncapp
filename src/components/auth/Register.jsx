@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "@material-ui/core/Button";
 
 import IconButton from "@material-ui/core/IconButton";
@@ -14,6 +14,9 @@ import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import MenuItem from "@material-ui/core/MenuItem";
 
 function Register() {
+  useEffect(() => {
+    document.title = "Register to Bonc";
+  });
   const languages = [
     {
       value: "Preferred language: English",
