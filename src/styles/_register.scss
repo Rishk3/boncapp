@@ -1,0 +1,80 @@
+.register {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  .inner {
+    max-width: 700px;
+    background-color: $mbgcolor;
+
+    min-height: 100vh;
+    padding: 1% 5%;
+    .top_signin {
+      display: flex;
+      justify-content: flex-end;
+    }
+    @media screen and (max-width: $medium) {
+      min-width: 500px;
+      width: 85%;
+    }
+    @media screen and (max-width: $small) {
+      min-width: 200px;
+      width: 95%;
+    }
+
+    .top_section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: -35px;
+
+      .logo_img {
+        height: 4rem;
+      }
+      .form {
+        margin-top: 20px;
+
+        .name {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .f_name,
+          .l_name {
+            width: 47%;
+            @media screen and (max-width: $small) {
+              margin-top: 10px;
+              width: 100%;
+            }
+          }
+        }
+        .bottom_section {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 15px;
+          .already {
+            align-self: center;
+            @media screen and (max-width: $small) {
+              text-align: left;
+
+              margin-top: 10px;
+            }
+          }
+          .subs_btn {
+            font-size: 1.2rem;
+            min-width: 30%;
+            border-radius: 30px !important;
+          }
+          @media screen and (max-width: $small) {
+            flex-direction: column-reverse;
+          }
+        }
+
+        .normal_input {
+          margin-top: 10px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+//register end
